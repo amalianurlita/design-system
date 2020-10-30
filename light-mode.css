@@ -1,0 +1,89 @@
+body,
+html {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: none;
+  margin: 0;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 5rem;
+  justify-content: space-between;
+}
+
+.middle-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.middle-content h3 {
+  margin: 0 1rem;
+  color: #8b7fb0;
+  font-weight: 400;
+}
+
+.button-right {
+  display: flex;
+}
+
+button {
+  background-color: #fc7f50;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  border: #fc7f50;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  margin-top: 5rem;
+}
+.container {
+  border-radius: 10px;
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  background-color: #f1f2f4;
+  width: 10rem;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+.container h6 {
+  padding: 0 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 0.7rem;
+  color: rgb(113, 101, 150);
+  text-align: center;
+}
+
+.container-sketch {
+  background-color: white;
+  /* height: 1rem; */
+  padding: 0 1rem;
+  border-radius: 10px;
+}
+
+.main-text {
+  text-align: center;
+}
+
+.main-text h1 {
+  font-size: 3rem;
+  color: #271857;
+}
+
+.main-text p {
+  color: rgb(113, 101, 150);
+}
+
+.logo{
+  font-weight: 700;
+  color: #271857
+}

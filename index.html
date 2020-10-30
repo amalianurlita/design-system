@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="all" href="light-mode.css" id="change-css" />
+    <link
+      rel="alternate stylesheet"
+      media="all"
+      href="dark-mode.css"
+      id="change-css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/457d33b834.js"></script>
+    <title>Slicing</title>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <h1 class="logo">moli</h1>
+      </div>
+      <div class="middle-content">
+        <h3>Product</h3>
+        <h3>Plans</h3>
+        <h3>Career</h3>
+        <h3>About</h3>
+      </div>
+      <div class="button-right">
+        <button id="change-button" onclick="changeMode()">Change Mode</button>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="container">
+        <div class="container-sketch">
+          <h6>Sketch</h6>
+        </div>
+        <h6>figma</h6>
+      </div>
+    </div>
+    <div class="main-text">
+      <h1>Design system made easy</h1>
+      <p>
+        Connects design and code so teams can work smarter, faster and more in
+        <br />
+        sync. Stop buzz while refrencing and discussing your designs.
+      </p>
+      <div class="button-group">
+        <button id="change-button1" onclick="changeDark()">Dark Mode</button>
+        <button id="change-button2" onclick="changeLight()">Light Mode</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    var count = 0;
+    document.getElementById("change-button").onclick = function changeMode() {
+      count = count + 1;
+      if (count % 2 != 0) {
+        console.log("object");
+        document.getElementById("change-css").href = "dark-mode.css";
+      } else {
+        document.getElementById("change-css").href = "light-mode.css";
+      }
+    };
+
+    document.getElementById("change-button1").onclick = function changeDark() {
+      document.getElementById("change-css").href = "dark-mode.css";
+    };
+    document.getElementById("change-button2").onclick = function changeLight() {
+      document.getElementById("change-css").href = "light-mode.css";
+    };
+  </script>
+</html>
